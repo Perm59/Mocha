@@ -1,9 +1,12 @@
 const assert = require('assert');
+const {expect} = require('chai');
+
 const {sum, mult, isAdult, sortArrayUp, isPalindrome, isOddNumber, isEvenNumber} = require('../index');
 
 describe('function sum', () => {
     it('should the sum of 2 and 4 be equal to 6', () => {
         assert.equal(sum(2,4), 6)
+        expect(sum(2, 4)).eq(6);
     });
 
     it('should the sum of 2 and 4 be not equal to 0', () => {
@@ -19,11 +22,11 @@ describe('function mult', () => {
 
 describe('function isAdult', () => {
     it('should the number -1 be equal to undefined', () => {
-        assert.equal(isAdult( -1), undefined)
+        assert.equal(isAdult( -1), undefined);
     });
 
     it('should the number 0 be not equal to true', () => {
-        assert.notEqual(isAdult( 0), true)
+        assert.notEqual(isAdult( 0), true);
     });
 
     it('should the number 20 be not equal to true', () => {
@@ -31,23 +34,27 @@ describe('function isAdult', () => {
     });
 
     it('should the number 21 be equal to true', () => {
-        assert.equal(isAdult( 21), true)
+        assert.equal(isAdult( 21), true);
+        expect(isAdult(21)).true;
     });
 
     it('should the number 22 be equal to true', () => {
-        assert.equal(isAdult( 22), true)
+        //assert.equal(isAdult( 22), true)
+        expect(isAdult(22)).true;
     });
 
     it('should the number 122 be equal to true', () => {
-        assert.equal(isAdult( 122), true)
+        //assert.equal(isAdult( 122), true)
+        expect(isAdult(122)).true;
     });
 
     it('should the number 123 be not equal to true', () => {
-        assert.notEqual(isAdult( 123), true)
+        assert.notEqual(isAdult( 123), true);
     });
 
     it('should the number "abc" be equal to undefined', () => {
-        assert.equal(isAdult( 'abc'), undefined)
+        assert.equal(isAdult( 'abc'), undefined);
+        expect(isAdult(abc))
     });
 })
 
