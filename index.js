@@ -1,4 +1,3 @@
-
 function sum(a, b) {
     return a + b;
 }
@@ -18,7 +17,7 @@ function sortArrayUp(arr) {
 }
 
 function isPalindrome(word) {
-    if(typeof word !== "string") return undefined;
+    if (typeof word !== "string") return undefined;
     return word.split('').reverse('').join('') === word;
 }
 
@@ -29,7 +28,7 @@ function isOddNumber(num) {
 }
 
 function isEvenNumber(num) {
-    if(num % 2) return 'odd';
+    if (num % 2) return 'odd';
     return 'even';
 }
 
@@ -40,7 +39,7 @@ function repeatIt(str, n) {
 
 function doubleChar(str) {
     let res = '';
-    for(let i = 0; i < str.length; i++){
+    for (let i = 0; i < str.length; i++) {
         res += str[i].repeat(2);
     }
     if (typeof str !== 'string') return Error;
@@ -48,7 +47,7 @@ function doubleChar(str) {
     return res;
 }
 
-function removeFirstAndLastCharacter(str){
+function removeFirstAndLastCharacter(str) {
     return str.split(',').slice(1, -1).join(' ') || null;
 }
 
