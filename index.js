@@ -13,6 +13,7 @@ function isAdult(number) {
 }
 
 function sortArrayUp(arr) {
+    if (!(Array.isArray(arr))) return 'Input an array, please.';
     return arr.sort((a, b) => a - b);
 }
 
@@ -22,7 +23,9 @@ function isPalindrome(word) {
 }
 
 function isOddNumber(num) {
-    return isNaN(num) ? undefined : num % 2;
+    if (isNaN(num)) return undefined;
+    if (num % 2) return true;
+    else return false;
 }
 
 function isEvenNumber(num) {
@@ -30,5 +33,36 @@ function isEvenNumber(num) {
     return 'even';
 }
 
-module.exports = {sum, mult, isAdult, sortArrayUp, isPalindrome, isOddNumber, isEvenNumber};
+function repeatIt(str, n) {
+    if (isNaN(n)) return 'n - is not a number';
+    return typeof str === 'string' ? str.repeat(n) : "str - is not a string";
+}
+
+function doubleChar(str) {
+    let res = '';
+    for(let i = 0; i < str.length; i++){
+        res += str[i].repeat(2);
+    }
+    if (typeof str !== 'string') return Error;
+    if (str.length < 1) return null;
+    return res;
+}
+
+function removeFirstAndLastCharacter(str){
+    return str.split(',').slice(1, -1).join(' ') || null;
+}
+
+
+module.exports = {
+    sum,
+    mult,
+    isAdult,
+    sortArrayUp,
+    isPalindrome,
+    isOddNumber,
+    isEvenNumber,
+    repeatIt,
+    doubleChar,
+    removeFirstAndLastCharacter
+};
 
