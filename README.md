@@ -10,14 +10,14 @@ Mocha and Chai are two JavaScript frameworks commonly used together for unit tes
 #### 1. Node
 Your computer should have node and npm installed. Install the node.js LTS version from [Node website](https://nodejs.org/en/) (npm gets installed along with node automatically).
 You can use these commands to check the successful installation of node and npm.
-npm -v // will return installed npm version
-node -v // will return installed node version
++ npm -v // will return installed npm version
++ node -v // will return installed node version
 
 #### 2. Mocha
 Mocha is a JavaScript Test Framework that runs on Node.js and Browser.
-Installation: npm install mocha
++ Installation: npm install mocha
 
 #### 3. Chai
 Chai is BDD/TDD assertion library that can be paired with any javascript testing framework.
 Assertion with Chai provides natural language assertions, expressive and readable style.
-Installation: npm install chai
++ Installation: npm install chai
